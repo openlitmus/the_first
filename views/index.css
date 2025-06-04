@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content:center ;
+    align-items: center;
+    background-color: pink;
+}
+#window{
+    display: flex;
+    /* justify-content: center; */
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10%;
+    height: 500px;
+    width: 40%;
+    border-radius: 20px;
+    background-color: rgba(187, 78, 154, 0.2);
+    box-shadow: 5px 5px 50px black;
+}
+#window #top_size{
+    display: flex;
+    margin-top: 50px;
+    height: 50px;
+}
+#window #top_size h3{
+    font-size: 30px;
+}
+#input{
+    display:flex ;
+    flex-direction: column;
+    height: 100%;
+    width: 55%;
+}
+#input #user_name,#user_pw{
+    height: 50px;
+    margin-top: 10px;
+    padding-left: 15px;
+}
+#input p{
+    display: flex;
+    justify-content: space-between;
+}
+#input p #login,#enroll{
+    border-radius: 10px;
+    border-color: pink;
+    margin-top: 20px;
+    width: 49%;
+    height: 40px;
+}
