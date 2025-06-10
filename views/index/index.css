@@ -1,0 +1,120 @@
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* 页面主体样式 */
+        body {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            background: linear-gradient(to bottom right, #fbc2eb 0%, #a6c1ee 100%);
+            font-size: 16px;
+            font-family: '黑体', 'Microsoft YaHei', sans-serif;
+        }
+
+        /* 头部容器 */
+        #head {
+            background: rgba(120, 255, 255, 0.4);
+            backdrop-filter: blur(10px);
+            width: 40%;
+            min-width: 400px;
+            height: 80px;
+            margin-top: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            display: flex;
+            justify-content: space-between;
+        }
+
+        /* 顶部菜单容器 */
+        #top_menu{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            
+        }
+
+        /* 菜单列表 */
+        #top_menu ul {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        /* 菜单项 */
+        #top_menu ul li {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0 20px;
+        }
+
+        /* 菜单链接 */
+        #top_menu ul li a {
+            text-decoration: none;
+            color: #333;
+            font-weight: 700;
+            padding: 8px 16px;
+            border-radius: 6px;
+            text-shadow: slategrey 5px 5px 20px;
+            transition: all 0.3s ease;
+        }
+
+        /* 菜单链接悬停效果 */
+        #top_menu ul li a:hover {
+            text-decoration: none;
+            transform: translateY(-3px);
+            color: #6b46c1;
+            background: rgba(255, 255, 255, 0.2);
+            text-shadow: none;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+        /*退出登录*/
+        #exit_login{
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            
+        }
+
+        /* 主要内容区域 */
+        .bodys {
+            width: 90%;
+            max-width: 1200px;
+            min-height: 500px;
+            background-color: rgba(255, 255, 255, 0.3);
+            margin-top: 30px;
+            border-radius: 15px;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+        }
+
+        /* 响应式设计 */
+        @media (max-width: 768px) {
+            #head {
+                width: 90%;
+                min-width: 300px;
+            }
+            
+            #top_menu ul {
+                flex-direction: column;
+                gap: 10px;
+            }
+            
+            #top_menu ul li {
+                margin: 5px 0;
+            }
+            
+            #head {
+                height: auto;
+                padding: 20px 0;
+            }
+        }
